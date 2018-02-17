@@ -3,8 +3,8 @@ pragma solidity ^0.4.17;
 contract CoOpFactory {
     address[] public deployedCoOps;
 
-    function createCoOp(uint minimum) public {
-        address newCoOp = new CoOp(minimum, msg.sender);
+    function createCoOp(string name, uint minimum) public {
+        address newCoOp = new CoOp(name, minimum, msg.sender);
         deployedCoOps.push(newCoOp);
     }
 
@@ -24,6 +24,7 @@ contract CoOp {
     }
 
     Request[] public requests;
+    string public name;
     address public manager;
     uint public minimumContribution;
     mapping(address => bool) public approvers;
@@ -34,9 +35,10 @@ contract CoOp {
         _;
     }
 
-    function CoOp(uint minimum, address creator) public {
+    function CoOp(string coopname, uint minimum, address creator) public {
         manager = creator;
         minimumContribution = minimum;
+        name = coopname;
     }
 
     function contribute() public payable {

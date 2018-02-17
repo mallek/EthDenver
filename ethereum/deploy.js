@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const compiledFactory = require('./build/CoOpFactory.json');
 
 const provider = new HDWalletProvider(
-  'call glow acoustic vintage front ring trade assist shuffle mimic volume reject',
-  'https://rinkeby.infura.io/orDImgKRzwNrVCDrAk5Q'
+  'angle wasp pig near reflect address bomb clinic myth base opinion expire',
+  'https://rinkeby.infura.io/STpsUmHWIHOnS4irmxW7'
 );
 const web3 = new Web3(provider);
 
