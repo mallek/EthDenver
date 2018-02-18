@@ -13,7 +13,7 @@ export default () => {
     return (
         <Menu style={{ marginTop: '10px' }}>
             <Link route="/">
-                <Image src='/static/images/logo.png' size='small' spaced="top" style={{ padding: 20, alignSelf: 'flex-start' }} />
+                <Image src='/static/images/logo.png' size='small' style={{ padding: 20, alignSelf: 'flex-start' }} />
             </Link>
 
             <Menu.Menu position="right">
