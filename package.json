@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "next build && node server.js",
     "deploy": "node ./ethereum/deploy.js",
     "dev": "node server.js"
   },
