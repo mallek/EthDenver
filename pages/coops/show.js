@@ -80,8 +80,8 @@ class CoOpShow extends Component {
 
                         <Grid.Column width={6}>
                             <ContributeForm address={this.props.address} />
-                            <h1><Icon name='signal' size='small' /> &nbsp;Cooperative Health</h1>
-                            <Image src='/static/images/chart.png' size='large' spaced="top" style={{padding: 20, alignSelf: 'flex-start'}}/>
+                            <h1><Icon name='signal' size='small' /> &nbsp;Bounty Goal</h1>
+                            <Image src='/static/images/status.png' size='large' spaced="top" style={{padding: 20, alignSelf: 'flex-start'}}/>
                         </Grid.Column>
                     </Grid.Row>
 

@@ -14,11 +14,17 @@ class CoOpIndex extends Component {
 
 
   renderCoOps() {
-    const companyNames = ["Cool Coop", "Another Coop", "The Best Coop", "Americas Winery CoOp"]
-    const descriptions = ["jhdksasdhksad", "ljhjkdsakjhjhsad", "lorem ipsum", "jkhkhdsgakagruyerej1"]
+    const companyNames = ["CryptoKitties Adoption Agency", "Another Coop", "The Best Coop", "Americas Winery CoOp", "hello world"]
+    const descriptions = ["So many cryptokitties go unsold on the market. This socially conscious agency pairs neglected CryptoKitties with new loving owners and coop members. No matter their generation!", "ljhjkdsakjhjhsad", "lorem ipsum", "jkhkhdsgakagruyerej1", "hlkjhdfkjhkjhfljshdlsd"]
     const items = this.props.coops.map((address, index) => {
 
-      const html = <div><a>View Co-op</a> <p>{descriptions[index]}</p></div>;
+      const html = (
+        <div>
+          <Link route={`/coops/${address}`}>
+            <a>View Co-op</a>
+            </Link>
+          <p>{descriptions[index]}</p>
+        </div>);
       return {
         header:  companyNames[index],
         meta: address,

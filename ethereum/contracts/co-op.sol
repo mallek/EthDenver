@@ -70,6 +70,16 @@ contract CoOp {
         request.approvalCount++;
     }
 
+    function disApproveRequest(uint index) public {
+        Request storage request = requests[index];
+
+        require(approvers[msg.sender]);
+        require(!request.approvals[msg.sender]);
+
+        request.approvals[msg.sender] = false;
+        request.approvalCount--;
+    }
+
     function finalizeRequest(uint index) public restricted {
         Request storage request = requests[index];
 
