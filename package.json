@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node ethereum/compile.js && next build && node server.js -P $PORT",
+    "start": "npm install && node ethereum/compile.js && next build && node server.js -P $PORT",
     "deploy": "node ./ethereum/deploy.js",
     "dev": "node server.js"
   },
