@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "node ./ethereum/compile.js"
+    "build" : "node ./ethereum/compile.js",
+    "deploy" : "node ./ethereum/deploy.js",
+    "dev": "node server.js"
   },
   "author": "Travis Haley",
   "license": "ISC",
