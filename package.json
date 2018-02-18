@@ -2,8 +2,7 @@
   "name": "coop",
   "version": "1.0.0",
   "description": "",
-  "engines":{"node":"8.1.4" },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "deploy": "node ./ethereum/deploy.js",
@@ -24,5 +23,8 @@
     "solc": "^0.4.19",
     "truffle-hdwallet-provider": "0.0.3",
     "web3": "1.0.0-beta.26"
+  },
+  "engines": {
+    "node": "8.1.3"
   }
 }
