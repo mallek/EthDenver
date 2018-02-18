@@ -14,11 +14,15 @@ class RequestNew extends Component {
     errorMessage: ''
   };
 
+
+
   static async getInitialProps(props) {
     const { address } = props.query;
 
     return { address };
   }
+
+
 
   onSubmit = async event => {
     event.preventDefault();
@@ -42,14 +46,31 @@ class RequestNew extends Component {
     this.setState({ loading: false });
   };
 
-  render() {
+    render() {
+
+        const options = [
+            { key: '1', text: 'Bounty', value: 'blunty' },
+            { key: '2', text: 'Administration', value: 'admin' },
+            { key: '3', text: 'Labor', value: 'labor' },
+            { key: '4', text: 'Financial', value: 'financial' },
+            { key: '5', text: 'Production', value: 'production' },
+
+
+        ]
+
     return (
       <Layout>
         <Link route={`/coops/${this.props.address}/requests`}>
           <a>Back</a>
         </Link>
         <h3>Create a Request</h3>
-        <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
+            <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
+
+            <Form.Field>
+
+            <Form.Select fluid label='Request Type' options={options} placeholder='Request Type' />
+          </Form.Field>
+
           <Form.Field>
             <label>Description</label>
             <Input

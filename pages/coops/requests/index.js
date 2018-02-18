@@ -58,8 +58,8 @@ class RequestIndex extends Component {
               <HeaderCell>Amount</HeaderCell>
               <HeaderCell>Recipient</HeaderCell>
               <HeaderCell>Approval Count</HeaderCell>
-              <HeaderCell>Vote</HeaderCell>
-              <HeaderCell>Finalize</HeaderCell>
+              <HeaderCell>Approve</HeaderCell>
+              <HeaderCell>Reject</HeaderCell>
             </Row>
           </Header>
           <Body>{this.renderRows()}</Body>

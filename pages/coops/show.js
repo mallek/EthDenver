@@ -79,6 +79,7 @@ class CoOpShow extends Component {
                         <Grid.Column width={10}>{this.renderCards()}</Grid.Column>
 
                         <Grid.Column width={6}>
+                            <h1><Icon name='heartbeat' size='small' /> &nbsp;Join This CoOp Now</h1>
                             <ContributeForm address={this.props.address} />
                             <h1><Icon name='signal' size='small' /> &nbsp;Bounty Goal</h1>
                             <Image src='/static/images/status.png' size='large' spaced="top" style={{padding: 20, alignSelf: 'flex-start'}}/>

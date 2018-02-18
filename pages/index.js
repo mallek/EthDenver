@@ -14,8 +14,8 @@ class CoOpIndex extends Component {
 
 
   renderCoOps() {
-    const companyNames = ["CryptoKitties Adoption Agency", "Another Coop", "The Best Coop", "Americas Winery CoOp", "hello world"]
-    const descriptions = ["So many cryptokitties go unsold on the market. This socially conscious agency pairs neglected CryptoKitties with new loving owners and coop members. No matter their generation!", "ljhjkdsakjhjhsad", "lorem ipsum", "jkhkhdsgakagruyerej1", "hlkjhdfkjhkjhfljshdlsd"]
+    const companyNames = ["CryptoKitties Adoption Agency", "Ada's Apple Orchard", "Denver Bootch Brews", "Old Car Show Lot", "The Best Coop", "Americas Winery CoOp", "hello world"]
+    const descriptions = ["So many cryptokitties go unsold on the market. This socially conscious agency pairs neglected CryptoKitties with new loving owners and coop members. No matter their generation!", "A lovely London based apple orchard that distributes worldwide.", "A Kombutcha brewery located in the heart of Denver. Their lively brew is has come a long way since the mother scoby.", "Built in the 1920s as a car show display room, this building has been re-purposed to host events. It has become especially popular among the cypberpunks", "hlkjhdfkjhkjhfljshdlsd"]
     const items = this.props.coops.map((address, index) => {
 
       const html = (

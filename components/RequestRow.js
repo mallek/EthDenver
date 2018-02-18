@@ -36,14 +36,9 @@ class RequestRow extends Component {
     const { id, request, approversCount } = this.props;
       const readyToFinalize = request.approvalCount > approversCount / 2;
       const html = (
-        <div>
           <Button color="green" basic onClick={this.onApprove}>
               Approve
             </Button>
-            <Button color="red" basic onClick={this.onDisApprove}>
-            Reject
-          </Button>
-          </div>
     )
 
     return (
@@ -62,11 +57,11 @@ class RequestRow extends Component {
           {request.complete ? null : html}
         </Cell>
         <Cell>
-          {request.complete ? null : (
-            <Button color="teal" basic onClick={this.onFinalize}>
-              Finalize
-            </Button>
-          )}
+          {request.approvalCount > 0 && !request.complete ? (
+          <Button color="red" basic onClick={this.onFinalize}>
+            Reject
+          </Button>
+          ) : null}
         </Cell>
       </Row>
     );
