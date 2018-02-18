@@ -8,6 +8,7 @@ const instance = new web3.eth.Contract(
   //'0x28ff27a5953d756b8146f4bb5f7769a9b8878a8f'
   //'0x7990f75347c00e80055b3c54489bb555372efe8d'
   '0x6fb6d392eefc136a30df060e2061aecf3756213f'
+  //'0x7e9e6d63fb95bce3b45b8f8934d831eea1a07d11'
 );
 
 export default instance;

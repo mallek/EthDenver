@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm install && node ethereum/compile.js && next build && node server.js -P $PORT",
+    "oldstart": "npm install && node ethereum/compile.js && next build && node server.js -P $PORT",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build && node ethereum/compile.js",
     "deploy": "node ./ethereum/deploy.js",
     "dev": "node server.js"
   },
