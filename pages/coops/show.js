@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Grid, Button, Image } from 'semantic-ui-react';
+import { Card, Grid, Button, Image, Icon } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import Cooperative from '../../ethereum/cooperative';
 import web3 from '../../ethereum/web3';
@@ -72,7 +72,7 @@ class CoOpShow extends Component {
     render() {
         return (
             <Layout>
-                <h3>Coop Show</h3>
+                <h3>The Creative CoOp</h3>
 
                 <Grid>
                     <Grid.Row>
@@ -80,6 +80,7 @@ class CoOpShow extends Component {
 
                         <Grid.Column width={6}>
                             <ContributeForm address={this.props.address} />
+                            <h1><Icon name='signal' size='small' /> &nbsp;Cooperative Health</h1>
                             <Image src='/static/images/chart.png' size='large' spaced="top" style={{padding: 20, alignSelf: 'flex-start'}}/>
                         </Grid.Column>
                     </Grid.Row>
