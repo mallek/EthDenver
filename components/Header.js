@@ -17,10 +17,6 @@ export default () => {
             </Link>
 
             <Menu.Menu position="right">
-                <Link route="/">
-                    <a class="item">CoOps</a>
-                </Link>
-
                 <Link route="/coops/new" className="blue">
                     <a className="item blueButton" style={divStyle}>Create a CoOp</a>
                 </Link>
