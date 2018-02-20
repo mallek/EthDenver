@@ -18,7 +18,7 @@ export default () => {
 
             <Menu.Menu position="right">
                 <Link route="/">
-                    <a className="item">CoOps</a>
+                    <a class="item">CoOps</a>
                 </Link>
 
                 <Link route="/coops/new" className="blue">
